@@ -7,12 +7,12 @@ import { StyledHeader, StyledHeaderCounter, StyledHeaderForm, StyledHeaderImg, S
 export function BurgerHeader({ searchValue, modal, setModal, counter }) {
     const styleCartLogo = { color: "#BDBDBD", fontSize: "25px"}
     const styleMagnifierLogo = { color: "#FFFFFF", fontSize: "16px", "strokeWidth": "5rem"}
-
     const [searchItem, setSearchItem] = useState('')
 
-    const foodSearch = (event) => {
-        event.preventDefault()
+    const foodSearch = (evt) => {
+        evt.preventDefault()
         searchValue(searchItem)
+        
     }
 
     return(

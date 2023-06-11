@@ -13,16 +13,17 @@ import { StyledClearButton,
     } from "./modalStyle";
 
 
+
 export function Modal({setModal, modal, foodlist, setFoodList}){
     const totalValue = foodlist.reduce((acc, value) => acc + value.price, 0)
     const monetaryValue = totalValue.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
-
+    
     const removeItem = (productID) => {
         const itensToStay = foodlist.filter(item => item.id !== productID)
         setFoodList(itensToStay)
     }
+    console.log(foodlist)
     
-
     return(
         <>
             <StyledTitle>

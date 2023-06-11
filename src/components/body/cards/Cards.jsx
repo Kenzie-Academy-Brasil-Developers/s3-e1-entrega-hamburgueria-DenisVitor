@@ -5,6 +5,7 @@ import { Caption, HeadingThree, StyledPrice } from "../../../styles/typography";
 import { StyledGreyMedium } from "../../../styles/buttons";
 import { BurgerHeader } from "../../header/BurgerHeader";
 import { Modal } from "../modal/Modal";
+import { toast } from "react-toastify";
 
 const foodItensApi = axios.create({
     baseURL: 'https://hamburgueria-kenzie-json-serve.herokuapp.com'
@@ -18,10 +19,11 @@ export function RenderCards(){
     const [foodlist, setFoodList] = useState([])
 
     const addNewItem = (item) => {
-        const filteredItens = foodlist.filter((food ) => food.id !== item.id)
+        const filteredItens = foodlist.filter((food) => food.id !== item.id )
+        toast.info('O item foi adicionado ao carrinho')
         setFoodList([...filteredItens, item])
+        
     }
-
     useEffect(() => {
        const getFoodItens = async () => {
             try{
@@ -49,7 +51,7 @@ export function RenderCards(){
         <StyledListSection>
             <StyledList>
                 {foodCards.map((card) => 
-                    <StyledItem autoFocus={true} key={card.id}>
+                    <StyledItem key={card.id}>
                         <StyledImgDivision>
                             <StyledImg src={card.img} alt={card.name} />
                         </StyledImgDivision>

@@ -19,6 +19,7 @@ export const StyledImgDivision = styled.figure`
     display: flex;
     justify-content: center;
     align-items: center;
+    
 `
 export const StyledDetailsDivision = styled.figcaption`
     display: flex;
@@ -40,8 +41,15 @@ export const StyledItem = styled.li`
     border: 2px solid var(--grey-100);
     border-radius: 8px;
     margin-bottom: 1rem;
-    &::focus{
-        border: none;
+    &:focus-within{
+        border: 2px solid var(--color-primary);
+        button{
+            background-color: var(--color-primary);
+            transition: 0.2s ease;
+            &:hover{
+                background-color: #93D7AF;
+            }
+        }
     }
 `
 export const StyledModal = styled.dialog`
