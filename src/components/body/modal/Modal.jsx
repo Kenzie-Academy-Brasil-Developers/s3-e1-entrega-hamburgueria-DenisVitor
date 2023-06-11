@@ -22,7 +22,6 @@ export function Modal({setModal, modal, foodlist, setFoodList}){
         const itensToStay = foodlist.filter(item => item.id !== productID)
         setFoodList(itensToStay)
     }
-    console.log(foodlist)
     
     return(
         <>
