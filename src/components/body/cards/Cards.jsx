@@ -1,5 +1,5 @@
 import axios  from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { StyledDetailsDivision, StyledImg, StyledImgDivision, StyledItem, StyledList, StyledListSection, StyledModal, StyledModalSection } from "./styleCards";
 import { Caption, HeadingThree, StyledPrice } from "../../../styles/typography";
 import { StyledGreyMedium } from "../../../styles/buttons";
@@ -17,7 +17,7 @@ export function RenderCards(){
     const [searchItem, setSearchItem] = useState('')
     const [modal, setModal] = useState(false)
     const [foodlist, setFoodList] = useState([])
-
+    
     const addNewItem = (item) => {
         const filteredItens = foodlist.filter((food) => food.id !== item.id )
         toast.info('O item foi adicionado ao carrinho')

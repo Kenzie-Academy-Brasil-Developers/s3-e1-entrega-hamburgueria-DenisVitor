@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 
+
 export const StyledTitle = styled.section`
     display: flex;
     padding: 0.7rem 0.5rem;
@@ -85,4 +86,5 @@ export const StyledClearButton = styled.button`
         background-color: var(--grey-300);
         color: var(--grey-100);
     }
+    
 `
