@@ -20,8 +20,12 @@ export function RenderCards(){
     
     const addNewItem = (item) => {
         const filteredItens = foodlist.filter((food) => food.id !== item.id )
-        toast.info('O item foi adicionado ao carrinho')
         setFoodList([...filteredItens, item])
+        if(foodlist.includes(item)){
+            toast.info('O item já está no carrinho')
+        } else {
+            toast.info('O item foi adicionado ao carrinho')
+        }
         
     }
     useEffect(() => {

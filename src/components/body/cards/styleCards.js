@@ -9,7 +9,7 @@ export const StyledList = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-    @media screen and (max-width: 1245px) {
+    @media screen and (max-width: 813px) {
         flex-wrap: nowrap;
         overflow-y: auto;
     }
