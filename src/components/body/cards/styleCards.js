@@ -29,8 +29,8 @@ export const StyledDetailsDivision = styled.figcaption`
 export const StyledImg = styled.img`
   background-color: var(--grey-100);
   background-size: cover;
-  width: 177px;
-  height: 177px;
+  width: 11.0625rem;
+  height: 11.0625rem;
 `;
 export const StyledItem = styled.li`
   display: flex;

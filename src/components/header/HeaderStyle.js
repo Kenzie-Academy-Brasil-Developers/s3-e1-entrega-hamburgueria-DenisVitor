@@ -64,9 +64,9 @@ export const StyledHeaderCounter = styled.div`
   position: relative;
   p {
     color: var(--grey-0);
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     position: absolute;
     top: -1rem;
     left: 80%;

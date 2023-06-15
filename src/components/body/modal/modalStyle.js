@@ -10,7 +10,7 @@ export const StyledTitle = styled.section`
 `;
 export const StyledCloseButton = styled.button`
   font-family: var(--font-family);
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 100;
   outline: none;
   border: none;
@@ -23,22 +23,22 @@ export const StyledFoodList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: 210px;
+  height: 13.125rem;
   overflow-y: auto;
   overflow-x: hidden;
 `;
 export const StyledFoodItem = styled.li`
   display: flex;
   img {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     background-color: var(--grey-100);
-    padding: 5px;
-    border-radius: 15px;
+    padding: 0.3125rem;
+    border-radius: 0.9375rem;
     margin-right: 0.4rem;
-    @media screen and (max-width: 472px) {
-      width: 60px;
-      height: 60px;
+    @media screen and (max-width: 29.5rem) {
+      width: 3.75rem;
+      height: 3.75rem;
     }
   }
 `;
@@ -57,7 +57,7 @@ export const StyledFoodPurchase = styled.section`
 `;
 export const StyledMoney = styled.p`
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--grey-300);
 `;
@@ -71,12 +71,12 @@ export const StyledRemoveButton = styled.button`
 export const StyledClearButton = styled.button`
   margin: 0 1rem;
   outline: none;
-  height: 60px;
+  height: 3.75rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: var(--grey-100);
   color: var(--grey-300);
   transition: 0.2s ease-in-out;
