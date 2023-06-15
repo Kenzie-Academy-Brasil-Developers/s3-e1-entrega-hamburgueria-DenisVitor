@@ -1,4 +1,4 @@
-import { createGlobalStyle }from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalVariables = createGlobalStyle`
     :root{
@@ -17,4 +17,4 @@ export const GlobalVariables = createGlobalStyle`
 ;
     }
 
-`
+`;
